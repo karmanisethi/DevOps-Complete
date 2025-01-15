@@ -1,0 +1,11 @@
+First stop the apache2 service if it is running with:
+
+sudo service apache2 stop
+Now remove and cleanup all the apache2 packages with:
+
+sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+//or 
+sudo apt-get purge apache2 apache2-utils apache2-bin apache2.2-common
+Finally, run
+
+sudo apt-get autoremove
